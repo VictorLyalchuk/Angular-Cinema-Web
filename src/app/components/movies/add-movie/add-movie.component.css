@@ -1,0 +1,17 @@
+form>div>*{
+    width: 100%;
+}
+.form{
+    width: 30%;
+    margin: 0 auto;
+}
+.form-button{
+    width: 15%;
+    margin: 0 auto;
+}
+
+.movie-card {
+    margin-bottom: 50px;
+    margin-top: 30px;
+  }
+  

@@ -1,0 +1,26 @@
+.movie-header-image {
+    background-image: url('../../../../assets/icon/cinema.png');
+    background-size: cover;
+    background-size: 80%;
+    background-repeat: no-repeat;
+  }
+  .movie-card {
+    max-width: 47%;
+
+    align-items: center;
+  }
+  .card-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    line-height: 1.4; 
+    padding: 20px; 
+    background-color: #f0f0f0; 
+  }
+  .movie-card img {
+    width: 75%; 
+    height: auto; 
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }

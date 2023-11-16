@@ -1,0 +1,52 @@
+<div class="movie-card">
+
+    <form [formGroup] ="movieForm" #f="ngForm" (ngSubmit)="EditMovie()">
+        <div class="form">
+            <mat-form-field>
+                <mat-label>Title</mat-label>
+                <input matInput type="text" placeholder="movie title" formControlName="title">
+            </mat-form-field>
+        </div>
+        <div
+            *ngIf="movieForm.get('title')?.invalid && (movieForm.get('title')?.dirty || movieForm.get('title')?.touched)">
+            Please enter more three symbol
+        </div>
+        <div class="form">
+            <mat-form-field>
+                <mat-label>Year</mat-label>
+                <input matInput type="number" placeholder="movie year" formControlName="year">
+            </mat-form-field>
+        </div>
+        <div class="form">
+            <mat-form-field>
+                <mat-label>ImageURL</mat-label>
+                <input matInput type="url" placeholder="movie image" formControlName="imageUrl">
+            </mat-form-field>
+        </div>
+        <div class="form">
+            <mat-form-field>
+                <mat-label>Duration</mat-label>
+                <input matInput type="time" value="01:30" placeholder="movie duration" formControlName="duration">
+            </mat-form-field>
+        </div>
+        <div class="form">
+            <mat-form-field>
+                <mat-label>Genres</mat-label>
+                <mat-select multiple="true" formControlName="genres">
+                    <mat-option value="History">History</mat-option>
+                    <mat-option value="Action">Action</mat-option>
+                    <mat-option value="Drama">Drama</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="form">
+            <mat-form-field>
+                <mat-label>Description</mat-label>
+                <textarea matInput formControlName="description"></textarea>
+            </mat-form-field>
+        </div>
+        <div class="form-button">
+            <button mat-raised-button type="submit" color="primary" [disabled]="f.invalid">Save</button>
+        </div>
+    </form>
+</div>

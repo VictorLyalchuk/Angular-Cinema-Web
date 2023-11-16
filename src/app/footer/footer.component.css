@@ -1,0 +1,26 @@
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+    margin: 0;
+    margin-left: 50px;
+}
+
+button:hover {
+    border-radius: 10px;
+    color: black;
+}
+
+.footer-toolbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: inline-block;
+}
+
+/* mat-toolbar-row {
+    padding: 0;
+} */

@@ -1,0 +1,18 @@
+.movie-card {
+  max-width: 450px;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+
+.movie-header-image {
+  background-image: url('../../../../assets/icon/cinema.png');
+  background-size: cover;
+  background-size: 80%;
+  background-repeat: no-repeat;
+}
+
+.movie-card img {
+  height: 550px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
